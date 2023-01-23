@@ -2,7 +2,10 @@ import React from 'react';
 
 const ChannelContainer = () => {
   return (
-    <div>ChannelContainer</div>
+    <div>
+    <img src="src/assets/jared.jpeg" alt="Jared Face" />
+    ChannelContainer
+    </div>
   );
 }
 

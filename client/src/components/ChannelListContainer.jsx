@@ -1,7 +1,8 @@
 import React from 'react';
 //TODO: import the comented out shit left off at youtube timestamp 25:20 https://www.youtube.com/watch?v=MJzbJQLGehs&t=1047s commented out cuz its fucked
-import { ChannelList, ChannelSearch, useChatContext} from 'stream-chat-react';
+import { ChannelList, useChatContext} from 'stream-chat-react';
 import Cookies from 'universal-cookie';
+import { ChannelSearch } from '../components'; //working component remove when finish importing TeamChannelList, Team ChannelPreview. Wont load otherwise.
 //import { ChannelSearch, TeamChannelList, TeamChannelPreview } from './'; 
 import HospitalIcon from '../assets/hospital.png';
 import LogoutIcon from '../assets/logout.png';
@@ -21,11 +22,11 @@ const SideBar = () => (
   </div>
 );
 
-const CompanyHeader = () => {
+const CompanyHeader = () => (
   <div className="channel-list__header">
-    <p className='channel-list__header__text'>Medical Pager</p>
+      <p className="channel-list__header__text">Medical Pager</p>
   </div>
-}
+)
 
 
 const ChannelListContainer = () => {

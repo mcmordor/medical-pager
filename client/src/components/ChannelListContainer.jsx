@@ -1,8 +1,8 @@
 import React from 'react';
-//TODO: import the comented out shit left off at youtube timestamp 25:20 https://www.youtube.com/watch?v=MJzbJQLGehs&t=1047s
-//import { ChannelList, useChatContext} from 'stream-chat-react';
-//import Cookies from 'universal-cookie';
-//import { ChannelSearch, TeamChannelList, TeamChannelPreview } from './';
+//TODO: import the comented out shit left off at youtube timestamp 25:20 https://www.youtube.com/watch?v=MJzbJQLGehs&t=1047s commented out cuz its fucked
+import { ChannelList, useChatContext} from 'stream-chat-react';
+import Cookies from 'universal-cookie';
+//import { ChannelSearch, TeamChannelList, TeamChannelPreview } from './'; 
 import HospitalIcon from '../assets/hospital.png';
 import LogoutIcon from '../assets/logout.png';
 

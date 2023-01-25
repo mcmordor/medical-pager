@@ -4,13 +4,25 @@ import { Chat } from 'stream-chat-react';
 import Cookies from 'universal-cookie';
 import {ChannelListContainer, ChannelContainer, Auth } from './components';
 import './App.css';
-//TODO: Create Backend on Server Directory timestamp: 1:08:57
+
+const cookies = new Cookies();
 
 const apiKey = 'zman9kwqm2w6';
+const authToken = cookies.get("token");
 
 const client = StreamChat.getInstance(apiKey);
 
-const authToken = false;
+
+if(authToken) {
+  client.connectUser({
+      id: cookies.get('userId'),
+      name: cookies.get('username'),
+      fullName: cookies.get('fullName'),
+      image: cookies.get('avatarURL'),
+      hashedPassword: cookies.get('hashedPassword'),
+      phoneNumber: cookies.get('phoneNumber'),
+  }, authToken)
+}
 
 //the actual app thing
 const App = () => {

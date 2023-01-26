@@ -2,8 +2,11 @@ import React from 'react'
 
 const MessageSimple = () => {
   return (
-    <div>MessageSimple</div>
-  )
+    <MessageSimple
+        message={{ ...message, user: {}}}
+        // handleOpenThread={}
+    />
+)
 }
 
 export default MessageSimple

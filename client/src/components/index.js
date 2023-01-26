@@ -10,4 +10,3 @@ export { default as CreateChannel } from './CreateChannel';
 export { default as UserList } from './UserList';
 export { default as ResultsDropdown } from './ResultsDropdown';
 export { default as Auth } from './Auth';
-
